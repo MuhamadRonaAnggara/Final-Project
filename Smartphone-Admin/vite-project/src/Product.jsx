@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Popup from '../../../Smartphone/Final-Project/ReactTailwind/src/components/Popup/Popup';
 
 const Product = () => {
     const [products, setProducts] = useState([]);
@@ -48,7 +47,6 @@ const Product = () => {
                     ))}
                 </tbody>
             </table>
-            <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} fetchProducts={fetchProducts} />
         </div>
     );
 };
